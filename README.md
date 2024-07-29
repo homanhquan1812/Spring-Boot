@@ -1,4 +1,4 @@
-﻿# Spring-Boot
+﻿# Spring Boot
 
  <div align="center">
   <img src="https://github.com/user-attachments/assets/0a1a95ed-aea5-493a-883b-b56a7fe82c6e" alt="Spring Boot Logo" width="600">
@@ -31,6 +31,7 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 spring.jpa.hibernate.ddl-auto=update
 ```
 
-Ta tạo 6 thư mục trong **com.homanhquan.springboot**: `controller`, `dto`, `entity`, `exception`, `respiratory`, `service`.
+Ta tạo 6 thư mục trong **com.homanhquan.springboot**: `controller`, `dto`, `entity`, `exception`, `mapper`, `respiratory`, `service`.
 
+## Bước 3
 Để tạo 1 **table**, ta tạo file với tên Table tùy ý trong thư mục `entity` rồi chép code theo mẫu. Chỉ cần ấn **build** thì table sẽ được tạo trong database.
