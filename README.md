@@ -16,6 +16,7 @@ Tiếp đến ta tải các thư viện đi kèm sau:
 * `MySQL Driver`
 * `Spring Data JPA`
 * `Lombok`
+* `Spring Boot DevTools`
 
 Sau đó, click `Generate` để tải về project.
 
