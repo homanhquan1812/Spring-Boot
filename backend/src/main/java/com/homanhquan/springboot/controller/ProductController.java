@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @AllArgsConstructor
 @RestController
 @RequestMapping("products")
@@ -24,7 +25,7 @@ public class ProductController {
     }
 
     // [GET] /products/:id
-    @GetMapping("/{id}")
+    @GetMapping("/edit/{id}")
     public ResponseEntity<ProductDto> getProductById(@PathVariable("id") Long productId) {
         ProductDto productDto = productService.getProductById(productId);
 
@@ -32,15 +33,15 @@ public class ProductController {
     }
 
     // [GET] /products
-    @GetMapping("/")
+    @GetMapping
     public ResponseEntity<List<ProductDto>> getAllProducts() {
         List<ProductDto> products = productService.getAllProducts();
 
         return ResponseEntity.ok(products);
     }
 
-    // [PUT] /products/:id
-    @PutMapping("/{id}")
+    // [PUT] /products/edit/:id
+    @PutMapping("/edit/{id}")
     public ResponseEntity<ProductDto> updateProduct(@PathVariable("id") Long productId, @RequestBody ProductDto updatedProduct) {
         ProductDto productDto = productService.updateProduct(productId, updatedProduct);
 

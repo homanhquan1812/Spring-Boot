@@ -8,13 +8,13 @@ public interface ProductService {
     // [POST] /products
     ProductDto createProduct(ProductDto productDto);
 
-    // [GET] /products/:id
+    // [GET] /products/edit/:id
     ProductDto getProductById(Long productId);
 
     // [GET] /products
     List<ProductDto> getAllProducts();
 
-    // [PUT] /products/:id
+    // [PUT] /products/edit/:id
     ProductDto updateProduct(Long productId, ProductDto updatedProduct);
 
     void deleteProduct(Long productId);
